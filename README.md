@@ -1,5 +1,7 @@
 # AgDemo
 
+<img width="1018" alt="image" src="https://github.com/user-attachments/assets/b5ee0d11-b0ff-4725-a0bb-ebc221bf3742">
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
 
 ## Development server
