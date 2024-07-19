@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'ag-grid-community/styles/ag-grid.css';
+/* Quartz Theme Specific CSS */
+@import 'ag-grid-community/styles/ag-theme-quartz.css';
+
+
+.custom-sparkline-tooltip {
+    position: absolute;
+    font: 12px arial, sans-serif;
+    border-radius: 2px !important;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 20%), 0 1px 1px rgb(0 0 0 / 14%);
+    line-height: 1.7em;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 99999;
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.67);
+    border-color: transparent;
+
+    .ag-chart-tooltip-content {
+        padding: 0 7px;
+        opacity: 1;
+    }
+
+    .ag-chart-tooltip-title {
+        padding-left: 7px;
+        opacity: 1;
+    }
+}

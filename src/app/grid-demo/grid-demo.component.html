@@ -1,0 +1,21 @@
+@if(price$ | async; as price) {
+<h2>
+  BTC -
+  <span [ngStyle]="{ color: price.higher ? 'green' : 'red' }">
+    {{ price.current }}
+  </span>
+  - {{ price.higher ? "🤑" : "🤬" }}
+</h2>
+}
+
+<ag-grid-angular
+  class="ag-theme-quartz sample-grid"
+  [columnDefs]="colDefs"
+  [detailCellRenderer]="detailCellRenderer"
+  [getRowId]="getRowId"
+  [masterDetail]="true"
+  [popupParent]="popupParent"
+  [rowData]="rowData"
+  (firstDataRendered)="onFirstDataRendered($event)"
+  (gridReady)="onGridReady($event)"
+/>
