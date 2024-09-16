@@ -30,6 +30,7 @@ export class CustomChartCellComponent implements ICellRendererAngularComp {
       annotations: { enabled: false },
       series: [
         {
+
           type: 'bar',
           xKey: 'time',
           yKey: 'value',
@@ -44,6 +45,7 @@ export class CustomChartCellComponent implements ICellRendererAngularComp {
           type: 'line',
           xKey: 'time',
           yKey: 'trend',
+
           marker: {
             enabled: false,
           },
@@ -93,6 +95,8 @@ export class CustomChartCellComponent implements ICellRendererAngularComp {
               strokeWidth: 2,
             },
           ],
+          min: -100,
+          max:100
         },
       ],
     };
